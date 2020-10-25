@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int tomatoes, peppers, carrots, olives, potatoes, sauces;
+	bool friend;
+	
+	bool salad = tomatoes >= 1 && peppers >= 2 && carrots >= 4 && olives >= 3 && potatoes >= 3 && sauces >= 150;
+
+	bool soup = tomatoes >= 2 && peppers >= 3 && carrots >= 5 && olives >= 6 && potatoes >= 10 && sauces >= 200;
+	
+	bool guivech = tomatoes >= 5 && peppers >= 6 && carrots >= 12 && olives >= 7 && potatoes >= 12 && sauces >= 300;
+
+  bool meal =(salad || ((soup || guivech) && friend));
+  
+  return 0;
+	
+}
